@@ -1,0 +1,21 @@
+# Tested versions (Python 3.10, CUDA 12.4, 8x A800-40GB).
+torch==2.6.0
+torchvision==0.21.0
+diffusers==0.33.1
+transformers==4.40.0
+peft==0.10.0
+accelerate==1.4.0
+safetensors==0.7.0
+sentencepiece==0.2.1
+protobuf==5.29.6
+huggingface-hub==0.29.1
+numpy==1.26.4
+scipy==1.15.2
+pillow==10.4.0
+tqdm==4.67.1
+# OCR reward
+paddlepaddle==2.6.2          # or paddlepaddle-gpu==2.6.2 in a separate interpreter for OCR_BACKEND=gpu
+paddleocr==2.9.1
+python-Levenshtein==0.27.3
+opencv-python-headless==4.11.0.86
+# GenEval reward: run in its own environment (mmdet / mmcv / open_clip), see README.
